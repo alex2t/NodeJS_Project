@@ -1,0 +1,365 @@
+
+<%- include('../includes/signedIN/headSignin.ejs') %>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<%- include('../includes/signedIN/navSignin.ejs') %>
+  
+<div class="container">
+        <input type="hidden" id="name-user" value="<%= user.name %>">
+    <div class="card-deck">
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Arsenal">
+            <img class="card-img-top img-fluid" src="pictures/teams/arsenal.png" alt="Arsenal image "></a>
+            <div class="card-body">
+                <h4 class="card-title">Arsenal</h4>
+                
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Arsenal">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Aston Villa">
+                <img class="card-img-top img-fluid" src="pictures/teams/aston_villa.png" alt=" Aston Villa image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Aston Villa</h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Aston Villa">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Bournemouth">
+                <img class="card-img-top img-fluid" src="pictures/teams/bournemouth.png" alt="Bournemouth image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Bournemouth </h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Bournemouth">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Chelsea">
+                <img class="card-img-top img-fluid" src="pictures/teams/chelsea.png" alt=" Chelsea image ">
+            </a> 
+            <div class="card-body">
+                <h4 class="card-title">Chelsea</h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Chelsea">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+         <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Crystal Palace">
+                <img class="card-img-top img-fluid" src="pictures/teams/crystal.png" alt=" Crystal Palace image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Crystal Palace</h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Crystal Palace">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Everton">
+                <img class="card-img-top img-fluid" src="pictures/teams/everton.png" alt=" Everton image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Everton</h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                    <div class="card-footer">    
+                        <small class="text-muted">Stay Tune</small>
+                        <input type="hidden" name="id" id="id" value="Everton"> 
+                        <button class="btn btn-secondary float-right btn-sm">Add</button>
+                    </div>
+                </form>    
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Leicester City">
+                <img class="card-img-top img-fluid" src="pictures/teams/leicester.png" alt="Leicester image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Leicester</h4>
+               
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                    <div class="card-footer">    
+                        <small class="text-muted">Stay Tune</small> 
+                        <input type="hidden" name="id" id="id" value="Leicester">
+                        <button class="btn btn-secondary float-right btn-sm">Add</button>
+                    </div>
+            </form>    
+        </div>
+        <div class="card mb-4">
+        <a style="text-decoration: none" href ="group/Liverpool">
+            <img class="card-img-top img-fluid" src="pictures/teams/liverpool.png" alt=" liverpool image ">
+        </a>
+            <div class="card-body">
+                <h4 class="card-title">Liverpool</h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Liverpool">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Manchester City">
+            <img class="card-img-top img-fluid" src="pictures/teams/manchesterCity.png" alt=" Manchester City image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Manchester City </h4>
+               
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Manchester City">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Manchester United">
+                <img class="card-img-top img-fluid" src="pictures/teams/ManchesterUnited.png" alt=" Manchester United image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Manchester United</h4>
+              
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Manchester United">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>    
+        </div>
+        <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Newcastle">
+                <img class="card-img-top img-fluid" src="pictures/teams/newcastle.png" alt="NewCastle image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Newcastle</h4>
+               
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                     <small class="text-muted">Stay Tune</small> 
+                     <input type="hidden" name="id" id="id" value="NewCastle">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                 </div>
+            </form>   
+        </div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Norwich">
+                <img class="card-img-top img-fluid" src="pictures/teams/norwich.png" alt=" Norwich image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Norwich</h4>
+             
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Norwich">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>   
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Southampton">
+                <img class="card-img-top img-fluid" src="pictures/teams/southampton.png" alt=" Southampton image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Southampton </h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small>
+                    <input type="hidden" name="id" id="id" value="Southampton"> 
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Stoke">
+                <img class="card-img-top img-fluid" src="pictures/teams/stoke.png" alt=" Stoke image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Stoke</h4>
+               
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small>
+                    <input type="hidden" name="id" id="id" value="Stoke"> 
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+         <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Sunderland">
+                <img class="card-img-top img-fluid" src="pictures/teams/sunderland.png" alt=" Sunderland image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Sunderland</h4>
+                
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small>
+                    <input type="hidden" name="id" id="id" value="Sunderland"> 
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Swansea">
+                <img class="card-img-top img-fluid" src="pictures/teams/Swansea.png" alt=" image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Swansea</h4>
+              
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Swansea">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Tottenham">
+                <img class="card-img-top img-fluid" src="pictures/teams/tottenham.png" alt=" Tottenham image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Tottemham</h4>
+              
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Tottenham">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/Watford">
+                <img class="card-img-top img-fluid" src="pictures/teams/watford.png" alt=" Watford image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">Watford</h4>
+              
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="Watford">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/West Bromwhich">
+                <img class="card-img-top img-fluid" src="pictures/teams/WesBromwhich.png" alt=" West bromwhich image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">West Bromwhich</h4>
+               
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="West Bromwhich">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="card mb-4">
+            <a style="text-decoration: none" href ="group/West Ham">
+                <img class="card-img-top img-fluid" src="pictures/teams/westham.png" alt=" Westham image ">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">West Ham</h4>
+           
+            </div>
+            <form action="/home" method ="POST" id="add-fav">
+                <div class="card-footer">    
+                    <small class="text-muted">Stay Tune</small> 
+                    <input type="hidden" name="id" id="id" value="West Ham">
+                    <button class="btn btn-secondary float-right btn-sm">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.0.js"integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/global.js" ></script>
+
+
+</body>
