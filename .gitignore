@@ -86,3 +86,5 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+ChatWebApp/Node_JSProject/
+ChatWebApp/Node_Project/
