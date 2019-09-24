@@ -1,5 +1,5 @@
 
-dbURI='mongodb://localhost:27017/ChatWebApp';
+dbURI=' ';
 module.exports = {
     mongoURI: dbURI
 };
