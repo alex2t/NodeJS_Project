@@ -1,4 +1,4 @@
-# NodeJS_Project
+# WebChat application
 The application created in this project ChatWebapp  offer the possibility to users to chat in a room depending of the premier league football teams of choice.20 different room is available, one for each premier league team. 
 It offer as well a private one to one room for communication between two users
 Once connected to a room a user is able to chat among the room participant. The list of the other participant is display to him on the side bar by showing their email address. By clicking on one of them,   a friend request invitation will be sent to that user . 
