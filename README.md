@@ -1,12 +1,12 @@
 # NodeJS_Project
-The application created in this project ChatWebapp  offer the possibility for the user to chat in a room depending of the premier league football teams of choice.  20 different room is available, one for each premier league team. Itl offer a private one to one communication between two users
-The user once connected to the room could chat among the room participant. The list of the other participant is made available to him. By clicking on an email to that list   a friend request invitation will be sent to that to that user . 
-The recipient of the invitation could either accept or deny it,
+The application created in this project ChatWebapp  offer the possibility to users to chat in a room depending of the premier league football teams of choice.20 different room is available, one for each premier league team. 
+It offer as well a private one to one room for communication between two users
+Once connected to a room a user is able to chat among the room participant. The list of the other participant is display to him on the side bar by showing their email address. By clicking on one of them,   a friend request invitation will be sent to that user . 
+The recipient of the invitation could either accept or deny it.
+
 All accepted invitation does not require any further invite to participate in a one to communication, as the friend will be stored to that database for that user
-The list of friends to a user that are online for a private chat are  display to the user as he entered a group room.
 
-
-
+The list of friends to a user that are online for a private chat are  display to the user as he entered a group room beside the display of the room particpant
 
 Socket.io is used to-
 -	listen all the user that are connected to the application
